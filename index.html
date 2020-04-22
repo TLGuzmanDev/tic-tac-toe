@@ -5,8 +5,44 @@
         <title>Tic-Tac-Toe</title>
         <link rel="stylesheet" href="styles/main.css">
         <script src="scripts/app.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        
+        <header>
+            <h1>Tic Tac Toe</h1>
+        </header>
+        <main>
+            <section id="options">
+                <form id="player-form">
+                    <div id="player1">
+                        <h2>PLAYER 1</h2>
+                        <label for="name1">Name</label>
+                        <input type="text" id="name1" name="name1">
+                    </div>
+                    <div id="player2">
+                        <h2>PLAYER 2</h2>
+                        <label for="name2">Name</label>
+                        <input type="text" id="name2" name="name2">
+                    </div>
+                    <input type="submit" value="START">
+                    <button id="reset-btn" type="button">RESET</button>
+                </form>
+            </section>
+            <section id="display">
+                <h2 id="GameState"></h2>
+                <h2 id="winner"></h2>
+            </section>
+            <section id="container">
+                <div class="board-item"></div>
+                <div class="board-item"></div>
+                <div class="board-item"></div>
+                <div class="board-item"></div>
+                <div class="board-item"></div>
+                <div class="board-item"></div>
+                <div class="board-item"></div>
+                <div class="board-item"></div>
+                <div class="board-item"></div>
+            </section>
+        </main>
     </body>
 </html>
